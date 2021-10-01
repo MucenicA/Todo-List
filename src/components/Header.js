@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./Context";
 
@@ -10,7 +10,7 @@ const Header = () => {
         <div></div>
         <p className="global-alert__text">
           <strong>Pick up today.</strong> Curbside Pickup—it's safe, easy and
-          free.<a href="#">Learn More</a>
+          free.<Link to="/">Learn More</Link>
         </p>
         <div className="global-alert__country">
           <img
@@ -32,70 +32,70 @@ const Header = () => {
             <ul className="global-header__list">
               <li className="global-header__item">
                 <a
-                  className="global-header__link global-header__link--red"
-                  href="#"
-                >
+                  className="global-header__link global-heaLinker__link--red"
+                  to="/"
+              Link>
                   Sale
                 </a>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Women
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Men
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Kids
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Young Adult
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Activewear
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Gifts
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Beauty
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Designer
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Brands
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
           <section className="global-header__extras">
             <ul className="global-header__list">
               <li className="global-header__item">
-                <a className="global-header__link" href="#">
+                <Link className="global-header__link" to="/">
                   Search
-                </a>
+                </Link>
               </li>
               <li className="global-header__item">
                 <Link className="global-header__link" to="/login">
@@ -114,61 +114,61 @@ const Header = () => {
           <ul className="global-header__list">
             <li className="global-header__item">
               <a
-                className="global-header__link global-header__link--red"
-                href="#"
-              >
+                className="global-header__link global-hLinkader__link--red"
+                to="/"
+            Link>
                 Sale
               </a>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Women
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Men
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Kids
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Young Adult
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Activewear
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Gifts
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Beauty
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Designer
-              </a>
+              </Link>
             </li>
             <li className="global-header__item">
-              <a className="global-header__link" href="#">
+              <Link className="global-header__link" to="/">
                 Brands
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

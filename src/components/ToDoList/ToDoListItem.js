@@ -6,8 +6,8 @@ const ToDoListItem = ({task, id}) => {
         <div className="todolist__item">
             <p className="todolist__text">{id+1}. {task}</p>
             <div className="todolist__actions">
-                <button className="todolist__btn" type="button" ><img className="todolist__img" src={require('./clarity_edit-line.png').default}/> </button>
-                <button className="todolist__btn" type="button" ><img className="todolist__img" src={require('./bi_trash.png').default}/> </button>
+                <button className="todolist__btn" type="button" ><img alt="..." className="todolist__img" src={require('./clarity_edit-line.png').default}/> </button>
+                <button className="todolist__btn" type="button" ><img alt="..." className="todolist__img" src={require('./bi_trash.png').default}/> </button>
             </div>
         </div>
     )

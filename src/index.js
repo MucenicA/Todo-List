@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Link } from 'react-router-dom';
-import Header from './components/Header';
-import Carousel from './components/Carousel';
+// import { Link } from 'react-router-dom';
+// import Header from './components/Header';
+// import Carousel from './components/Carousel';
 import Form from './components/Form';
 import Cart from './components/Cart';
 import TodoList from './components/ToDoList/TodoList';
