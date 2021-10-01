@@ -1,17 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Link } from 'react-router-dom';
+import Header from './components/Header';
+import Carousel from './components/Carousel';
+import Form from './components/Form';
+import Cart from './components/Cart';
+import TodoList from './components/ToDoList/TodoList';
+import { ContextProvider } from './components/ToDoList/Context';
+import { CartProvider } from './components/Context';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './scss/app.css';
 
+
+
+const App = () => {
+  return (
+    <>
+      {/* <Header /> */}
+    <Switch>
+      <Route exact path='/' component={TodoList} />
+      <Route exact path='/login' component={Form} />
+      <Route exact path='/cart' component={Cart} />
+    </Switch>
+    </>
+  )
+}
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
+    <CartProvider>
+    <ContextProvider>
     <App />
-  </React.StrictMode>,
+    </ContextProvider>
+    </CartProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
